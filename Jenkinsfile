@@ -32,7 +32,7 @@ pipeline {
                 echo "Registering Docker artifact..."
                 script {
                     registerBuildArtifactMetadata(
-                        name: "demo-jenk-service",
+                        name: "jenkins-demo1",
                         version: "1.0.0",
                         type: "docker",
                         url: "${env.DOCKER_REGISTRY}/${env.DOCKER_IMAGE}:${env.DOCKER_TAG}",
